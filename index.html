@@ -1,0 +1,56 @@
+<!doctype html>
+<!--[if lte IE 8 ]><html lang="en" class="ie"><![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Mobile Side Navigation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/standardNav.css">
+</head>
+
+<body>
+    <header>
+          <nav id="mobiNav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a>
+                    <ul>
+                        <li><a href="#">What We Do</a></li>
+                        <li><a href="#">History</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Blog</a>
+                <li><a href="#">Portfolio</a>
+                <li><a href="#">Contact</a>
+                    <ul>
+                        <li><a href="#">Locations</a>
+                            <ul>
+                                <li><a href="#">United States</a></li>
+                                <li><a href="#">Canada</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Current Clients</a></li>
+                        <li><a href="#">General Inquiries</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<div>Resize your browser to toggle the mobile navigation!</div>
+<div>
+<h2>Customization</h2>
+All customization options can be edited in the script tags in the HTML.<br/>
+<span>Breakpoint:</span> Set the pixel width you want to trigger the mobile navigation to appear (currently set to 650px).<br/>
+<span>Position:</span> Change the position between 'top' and 'bottom' based on where on the user's screen you want the menu to appear.<br/>
+<span>Theme:</span> The theme can be changed between 'light' and 'dark'.</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/jquery.mobinav.js"></script>
+<script>
+$(function(){
+	$('nav#mobiNav').mobiNav({ breakpoint: 650, position:'top', theme: 'light' });
+});
+</script>
+</body>
+</html>

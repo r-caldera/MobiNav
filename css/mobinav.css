@@ -1,0 +1,125 @@
+/****************************************
+		MobiNav Styles
+****************************************/
+.navWrap{ position:fixed; padding: 0; bottom: 0;width:100%;}
+/***************************************
+			Position
+***************************************/
+/*Bottom*/
+.navWrap.bottom{ bottom:0;}
+.navWrap.bottom nav#mobiNav { 
+	border-radius: 15px 15px 0 0;
+	-moz-border-radius: 15px 15px 0 0;
+}
+.navWrap.bottom nav#mobiNav a.mobiNav_handle { 
+	-moz-border-radius: 15px 15px 0 0;
+	border-radius: 15px 15px 0 0;
+}
+/*Top*/
+.navWrap.top{ top:0;}
+.navWrap.top nav#mobiNav {  
+	border-radius: 0 0 15px 15px;
+	-moz-border-radius: 0 0 15px 15px;
+	-webkit-box-shadow: 0px 0px 0px 1px #797979;
+	-moz-box-shadow: 0px 0px 0px 1px #797979;
+	box-shadow: 0px 0px 0px 1px #797979;
+}
+.navWrap.top nav#mobiNav a.mobiNav_handle { 
+	-moz-border-radius: 0 0 15px 15px;
+	border-radius: 0 0 15px 15px;
+}
+/**************************************/
+nav#mobiNav { 
+	position:relative; 
+	float: none; 
+	margin: 0 auto;
+	width: 90%; 
+	border:2px solid #b9b9b9;
+	-webkit-box-shadow: 0px 0px 0px 1px #797979;
+	-moz-box-shadow: 0px 0px 0px 1px #797979;
+	box-shadow: 0px 0px 0px 1px #797979;
+	text-transform: uppercase;
+}
+nav#mobiNav a.mobiNav_handle { 
+	display: block; 
+	padding: 10px; 
+	text-align: center; 
+	position:relative; 
+	color:#CCC; 
+	background:#000; 
+	opacity:0.9; 
+	filter:alpha(opacity=90); /* For IE8 and earlier */
+	-moz-border-radius: 15px 15px 0 0;
+	border-radius: 15px 15px 0 0;
+}
+nav#mobiNav ul { 
+	display: none;
+}
+
+nav#mobiNav ul li { 
+	display: block; 
+	position: relative; 
+	float: none; 
+	padding: 0; 
+}
+nav#mobiNav ul a, nav#mobiNav ul a:link, nav#mobiNav ul a:visited { 
+	display: block; 
+	position: relative; 
+	float: none; 
+	padding: 15px 10px; 
+	clear: both;
+}
+/* Sub Nav */
+nav#mobiNav ul ul {
+	display: none;
+	position: relative;
+	width: 100%; 
+	top: 0; 
+	left: 0; 
+	margin: 0; 
+	padding: 0; 
+	background: none; 
+	border-bottom: 2px solid #999; 
+	z-index: 999999;
+}
+nav#mobiNav ul ul a, nav#mobiNav ul ul a:link, nav#mobiNav ul ul a:visited { color: #000; padding: 15px 10px 15px 25px; }
+            
+/* Sub Sub-Nav*/
+nav#mobiNav ul ul ul { 
+	top: 0; 
+	left: 0; 
+	z-index: 999999;
+}
+nav#mobiNav ul ul ul a, nav#mobiNav ul ul ul a:link, nav#mobiNav ul ul ul a:visited { padding: 15px 10px 15px 45px; }
+nav#mobiNav .subNav { position: absolute; right: 0; top: 0; width: 10%; padding: 15px 20px; margin: 0; cursor: pointer; border:none!important;}
+nav#mobiNav .arrowUp { float: right; width: 0; height: 0; padding: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 10px solid #000; }
+nav#mobiNav .arrowDown { float: right; width: 0; height: 0; padding: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #000; }
+
+/***************************************
+			Themes
+***************************************/
+/**** Dark ****/
+nav#mobiNav ul li.dark{
+	background: #4b545f;
+	background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+	background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+	background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+	color:#ccc!important;
+}
+nav#mobiNav ul li.dark a{
+	border-bottom: 1px solid #4C4C4C;
+	color:#ccc!important;
+}
+/**** Light ****/
+nav#mobiNav ul li.light{
+	background: #efefef; 
+	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+	color:#666!important;
+}
+nav#mobiNav ul li.light a{
+	border-bottom: 1px solid #999;
+	color:#666!important;
+}
